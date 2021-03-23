@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
-    <title>Filter features with TimeSlider | Sample | ArcGIS API for JavaScript 4.18</title>
+    <title>Earthquakes around Anchorage GIS 5080 - Elliott Wolf</title>
 
     <style>
       html,
@@ -30,7 +30,14 @@
         font-weight: bolder;
       }
     </style>
+    
+    <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/css/calcite-web.min.css">
 
+    <div class="panel panel-dark">
+  <h4 class="trailer-half">Earthquakes in the vicinity of Anchorage, Alaska for the period 5/25/2020 - 12/31/2020.  By Elliott Wolf GIS 5080</h4>
+  <p class="trailer-0">Please click the >> button to view the legend.</code> Earthquakes "bubbles" can be clicked on individually to view Magnitude, Time, and Location.  The time slider (bottom left) can be adjusted for a period of two dates using the two circles or overlapping at default (one date).</p>
+</div>
+    
     <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/dark/main.css" />
     <script src="https://js.arcgis.com/4.18/"></script>
     <script>
@@ -328,9 +335,6 @@
   <body>
     <div id="viewDiv"></div>
     <div id="timeSlider"></div>
-    <div id="infoDiv" class="esri-widget">
-      <div> <b>USGS Earthquakes</b></div><br/>
-      <div id="statsDiv" class="esri-widget"></div>
     </div>
   </body>
 </html>
